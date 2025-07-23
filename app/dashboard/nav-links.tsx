@@ -9,7 +9,11 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
  
-// ...
+const links = [
+  { name: 'Home', href: '/dashboard', icon: HomeIcon },
+  { name: 'Users', href: '/dashboard/users', icon: UserGroupIcon },
+  { name: 'Documents', href: '/dashboard/documents', icon: DocumentDuplicateIcon },
+];
  
 export default function NavLinks() {
   const pathname = usePathname();
